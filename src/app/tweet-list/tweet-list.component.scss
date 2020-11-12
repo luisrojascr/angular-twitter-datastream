@@ -1,0 +1,12 @@
+.tweets {
+	max-height: 500px;
+	height: 500px;
+	overflow: auto;
+}
+
+.card-text {
+	list-style: none;
+	li {
+		display: inline-block;
+	}
+}

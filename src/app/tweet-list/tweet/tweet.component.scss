@@ -1,0 +1,15 @@
+.image img {
+	border-radius: 7px;
+}
+
+.hbox {
+	display: flex;
+	flex-direction: row;
+}
+
+.tweet {
+	border: 1px solid lightgray;
+	border-width: 0px 1px 1px 1px;
+	display: flex;
+	flex-direction: row;
+}

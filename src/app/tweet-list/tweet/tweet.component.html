@@ -1,0 +1,16 @@
+<div class="hbox tweet" *ngFor="let tweet of tweets">
+	<div class="image p-2">
+		<img [src]="tweet?.user?.profile_image_url" width="48" height="48" />
+	</div>
+	<div class="vbox p-2">
+		<div class="hbox">
+			<b class="name mr-2">{{ tweet?.user?.name }} </b
+			><span class="username mr-2"> @{{ tweet?.user?.screen_name }} </span
+			><b class="time mr-2">{{ tweet?.created_at | date }}</b>
+			<span class="country-code">{{ tweet?.place?.country_code }}</span>
+		</div>
+		<div class="text">
+			{{ tweet?.text | slice: 0:100 }} {{ tweet?.extended_tweet?.display_text_range[1] > 100 ? '...' : '' }}
+		</div>
+	</div>
+</div>
